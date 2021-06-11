@@ -219,7 +219,7 @@ console.log(artists[2].bio);
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 artists[10].name = 'Vincent Van Gogh';
 
-/*console.log('Task 2', artists);
+console.log('Task 2', artists);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
@@ -249,8 +249,6 @@ function get20s(array){
  
 }
 
-
-
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
  Use removeArtist to do the following:
  1. Receive an array
@@ -261,9 +259,12 @@ function get20s(array){
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(array, index){
-   array.splice(index, 1);
 
-   return array.length;
+  const lessArtists = [...array];
+
+   lessArtists.splice(index, 1);
+
+   return lessArtists.length;
 }
    console.log('Task 5',removeArtist(artists,0));
 
@@ -309,11 +310,19 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(array){
+
+  const manyPaint = [];
+
+  for(let i = 0;i < array.length; i++){
+    if(array[i].paintings > 100){
+      manyPaint.push(array[i].name);
+    }
+  }
+  return manyPaint;
 }
 
-
+console.log('Task 7', lotsOfArt(artists));
 
 
 // 🎨🎨 STRETCH 🎨🎨//
