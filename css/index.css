@@ -151,7 +151,8 @@ button:hover{
 }
 .bio{
     margin-top:4%;
-    width:95%;
+    width:100%;
+    margin-left:-0.2%;
 }
 .artist img, .artist2 img{
     margin-bottom:4%;
