@@ -200,7 +200,7 @@ button:hover{
     .title-container hr{
         margin-top:1%;
         width:100%;
-        margin-bottom:5%;
+        margin-bottom:3%;
     }
 
     .artists-container{
@@ -211,29 +211,30 @@ button:hover{
     }
     
     .artist img{
-        width:70%;
-        height:25vh;
-        margin-bottom: 5%;
+        width:80%;
+        height:30vh;
+        margin-bottom: 4%;
     }
 
     .artist a, .artist2 a{
-        font-size:1.3rem;
+        font-size:1.4rem;
     }
     
     .artist p, .artist2 p{
-        font-size:1rem;
+        font-size:0.9rem;
     }
 
     .artist2 img{
-        width: 80%;
+        width: 85%;
+        height:30vh;
     }
 
     .bio{
-        margin-left:-5%;
-        width:110%;
+        width:123%;
         font-size:1.1rem;
         line-height: 1.2rem;
         margin-bottom:13%;
+        margin-top:-2%;
+        margin-left:-12%;
     }
-
 }
