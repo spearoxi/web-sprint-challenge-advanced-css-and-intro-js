@@ -72,7 +72,7 @@ nav{
     width:17%;
     display:flex;
     justify-content:space-evenly;
-    margin-top:5%;
+    margin-top:4%;
 }
 .home{
     font-weight: bolder;
@@ -102,6 +102,7 @@ nav span{
     align-items: center;
     height:57vh;
     margin:2.5% 0;
+    margin-bottom:2%;
 }	
 .title-container div:hover {	
     opacity: 80%;	
@@ -113,13 +114,14 @@ nav span{
     font-size: 5.5rem;
 }	
 .title-container hr{
-    width:80%;
+    width:62%;
+    border:0.2rem solid #d9d9d9;
 }
 button{
     margin-top:1%;
-    padding:1% 3%;
+    padding:0.8% 3%;
     font-size: 1.8rem;
-    border-radius:6px;
+    border-radius:4.5px;
     border:2px solid #626262;
     box-shadow: 2px 2px 1px #626262;
     transition: 2s;
@@ -134,16 +136,45 @@ button:hover{
 /*Artists Section Styles */
 .artists-container{
     display:flex;
-    justify-content: space-around;
-    width:80%;
+    justify-content: space-between;
+    width:60%;
     margin:0 auto;
 }
 
 .artist{
-    width:40%;
+    width:50%;
     text-align:center;
 }
+.artist a{
+    font-size:2.5rem;
+    font-weight:lighter;
+}
+.bio{
+    margin-top:4%;
+    width:95%;
+}
 .artist img{
-    width:100%;
+    margin-bottom:4%;
+    width:70%;
+    height: 29vh;
 }
 
+/*responsive portion*/
+
+@media(max-width: 500px){
+    .title-container div{
+        height:52vh;
+        width:100%;
+    }
+    nav{
+        width:32%;
+        justify-content:space-between;
+    }
+    nav a{
+        font-size:2.9rem;
+    }
+    nav span{
+        margin:3%;
+    }
+
+}
