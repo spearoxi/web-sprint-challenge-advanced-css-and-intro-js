@@ -69,17 +69,22 @@ header{
     justify-content: center;
 }
 nav{
-    width:30%;
+    width:32%;
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     margin-top:5%;
 }
 nav a{
     color:#626262;
+    font-size:2.9rem;
+    
+}
+.home{
+    font-weight: bolder;
 }
 nav span{
     border-left:3px solid #626262;
-
+    margin:3%;
 }
 /*Title Section Styles*/
 .title-container{
